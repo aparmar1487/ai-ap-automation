@@ -1,8 +1,0 @@
-import pandas as pd
-
-tables = ["LFA1", "EKKO", "EKPO", "RBKP", "RSEG", "REGUH", "REGUP"]
-
-for t in tables:
-    df = pd.read_csv(f"data/sap_tables/{t}.csv")
-    print(f"\n===== {t} ({len(df)} rows) =====")
-    print(df.head(3))
